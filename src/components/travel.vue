@@ -14,9 +14,9 @@
                 </div>
                 <div>
                     <span class="username">{{travel.releaseUsername}}</span>
-                    <span class="time">{{travel.releaseTime}}</span> 
+                    <span class="time">{{travel.releaseTime}}</span>
                 </div>
-            </div> 
+            </div>
         </router-link>
 	</div>
 </template>
@@ -28,7 +28,7 @@ export default {
     },
 	data() {
 		return {
-            
+
 		}
 	}
 }
@@ -46,7 +46,7 @@ export default {
         border-bottom: 1px solid #f1f1f1;
         .A-cimg {
             position: relative;
-            min-height: px2rem(100px); 
+            min-height: px2rem(100px);
             img {
                 width: 100%;
                 max-height: px2rem(300px);

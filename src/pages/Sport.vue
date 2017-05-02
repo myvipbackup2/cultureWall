@@ -17,11 +17,11 @@ export default {
 	},
 	data() {
 		return {
-			
+
 		}
 	},
     created() {
-        if (this.sportsList.length == 0) {
+        if (this.sportsList.length === 0) {
             this.$store.dispatch('getSportsList')
         }
     },
@@ -31,10 +31,10 @@ export default {
 		])
 	},
 	mounted(){
-		
+
     },
 	methods: {
-		
+
 	}
 }
 </script>

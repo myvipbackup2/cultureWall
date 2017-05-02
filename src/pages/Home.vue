@@ -20,7 +20,7 @@ import travelList from '@/components/travelList'
 import { mapGetters } from 'vuex'
 
 export default {
-	
+
 	components: {
 		swiper,
 		swiperSlide,
@@ -40,7 +40,7 @@ export default {
 		}
 	},
 	created() {
-        if (this.travelListIndex.length == 0) {
+        if (this.travelListIndex.length === 0) {
             this.$store.dispatch('getTravelsList')
         }
     },
@@ -50,10 +50,10 @@ export default {
 		])
 	},
 	mounted(){
-		
+
     },
 	methods: {
-		
+
 	}
 }
 </script>

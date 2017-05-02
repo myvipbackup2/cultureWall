@@ -10,7 +10,7 @@
 			<div class="tab-item">
 				<router-link to="/sport">
 					<div class="tab-icon"><img src="../assets/images/tab_running.png" alt=""></div>
-					<div class="tab-text">约跑</div>
+					<div class="tab-text">书架</div>
 				</router-link>
 			</div>
 			<div class="tab-item">
@@ -58,7 +58,7 @@ export default {
 	    height: px2rem(120px);
 	    line-height: px2rem(120px);
 	    background: #fff;
-		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	    &:after{
 			display: block;
 			position: absolute;
@@ -92,7 +92,7 @@ export default {
 					line-height: px2rem(80px);
 				}
 			}
-			
+
 	    }
 	}
 }

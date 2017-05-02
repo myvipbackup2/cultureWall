@@ -1,7 +1,7 @@
 <template>
 	<div class="y-nav">
         <div class="y_nav_h">
-			<img src="../assets/images/homepage_man.png" alt="">年轻哪能不放纵，约起来
+			<img src="../assets/images/homepage_man.png" alt="">时光漫步，表白墙
 		</div>
         <ul>
 			<li>
@@ -13,13 +13,13 @@
 			<li>
 				<router-link to="/user/navbar">
 					<i class="icon">&#xe666;</i>
-					<span>我的约跑</span>
+					<span>我的表白</span>
 				</router-link>
 			</li>
 			<li>
 				<router-link to="/user/navbar">
 					<i class="icon">&#xe6bd;</i>
-					<span>我的约行</span>
+					<span>我的书架</span>
 				</router-link>
 			</li>
 			<li>
@@ -36,7 +36,7 @@
 export default {
 	data() {
 		return {
-			
+
 		}
 	}
 }
