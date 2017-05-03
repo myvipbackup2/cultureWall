@@ -6,7 +6,8 @@ import * as _ from '../util/tool'
 // axios 配置
 axios.defaults.timeout = 5000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
-axios.defaults.baseURL = 'http://hjingren.cn:4000';
+axios.defaults.baseURL = 'http://www.webqd.org';
+// axios.defaults.withCredentials = true;
 
 //POST传参序列化
 axios.interceptors.request.use((config) => {
@@ -78,7 +79,7 @@ export default {
      * 获取约出行列表
      */
     TravelsList() {
-        return fetch('/api/travelList')
+        return fetch('/welcome/aa')
     },
 
     /**

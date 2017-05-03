@@ -8,7 +8,7 @@ const state = {
     showToast: false,
     leftNavStatus: false,
     showSuccess: true,
-	showFail: false,
+	  showFail: false,
     toastMsg: '操作成功',
     showTimePicker: false,
     alertMsg: '退出登录',

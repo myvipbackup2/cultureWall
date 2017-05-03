@@ -37,7 +37,7 @@ export default {
 				spaceBetween: 30,
 				loop: true
 			}
-		}
+    }
 	},
 	created() {
         if (this.travelListIndex.length === 0) {

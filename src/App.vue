@@ -2,7 +2,7 @@
     <div id="app">
         <v-toast v-show="showToast"></v-toast>
         <v-alert v-show="showAlert"></v-alert>
-        <!--<v-loading v-show="loading"></v-loading>-->
+        <v-loading v-show="loading"></v-loading>
 
         <v-header :title="title" :menu-display="menuDisplay" :back-display="backDisplay" :map-display="mapDisplay"></v-header>
         <div class="content" :class="{tabar: tabar}">
