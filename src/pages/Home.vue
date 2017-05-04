@@ -16,6 +16,7 @@
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import nav from '@/components/nav'
 import travelList from '@/components/travelList'
+//import axios from 'axios'
 
 import { mapGetters } from 'vuex'
 
@@ -42,6 +43,9 @@ export default {
 	created() {
         if (this.travelListIndex.length === 0) {
             this.$store.dispatch('getTravelsList')
+//            axios.get('/api/travelList').then(
+//              (data)=>data.data.data
+//            )
         }
     },
 	computed: {
