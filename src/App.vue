@@ -60,15 +60,15 @@ export default {
       title () {
         switch (this.$route.path.split('/')[1]) {
             case '':
-              return "Qu约"
+              return "表白墙";
             case 'home':
-              return "Qu约"
+              return "表白墙";
             case 'sport':
-              return "约跑"
+              return "书架";
             case 'travel':
-              return "约行"
+              return "约行";
             case 'user':
-              return "我的"
+              return "我的";
         }
       },
       tabar () {
