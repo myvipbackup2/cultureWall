@@ -25,10 +25,10 @@ export default {
 		return {
 			cellLists1: [
                 { link: '', iconUrl: '', text: '消息推送', desc: '', more: true},
-                { link: '', iconUrl: '', text: '版本更新', desc: '', more: true},     
-                { link: '', iconUrl: '', text: '意见反聩', desc: '', more: true}, 
+                { link: '', iconUrl: '', text: '版本更新', desc: '', more: true},
+                { link: '', iconUrl: '', text: '意见反聩', desc: '', more: true},
                 { link: '', iconUrl: '', text: '给我评分', desc: '', more: true},
-                { link: '', iconUrl: '', text: '关于我们', desc: '', more: true}    
+                { link: '', iconUrl: '', text: '关于我们', desc: '', more: true}
             ],
 			dialog: false,
             dialogMsg: '确认退出登录?',
@@ -45,15 +45,15 @@ export default {
 			this.dialog = true
 		},
 		confirm() {
-            this.dialog = false
-			this.$store.dispatch('setSignOut')
-			_.alert('退出登录成功')
+            this.dialog = false;
+			this.$store.dispatch('setSignOut');
+			_.alert('退出登录成功');
 			setTimeout(() => {
 				this.$router.replace('/user')
 			}, 500)
         },
         cancel() {
-            this.dialog = false
+            this.dialog = false;
         }
 	}
 }

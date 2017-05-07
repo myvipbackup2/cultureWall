@@ -3,7 +3,7 @@
         <div class="travel-list-head">
             <div class="head-l">
                 <i class="icon">&#xe678;</i>
-                <span>热门活动</span>
+                <span>热门表白</span>
             </div>
             <div class="head-r">
                 <router-link to="/travel">

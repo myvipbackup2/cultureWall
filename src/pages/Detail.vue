@@ -50,7 +50,7 @@ export default {
     },
     beforeRouteEnter(to, from, next) {
         next((vm) => {
-            vm.detail = ''
+            vm.detail = '';
             vm.getDetailData(vm)
         })
     },
@@ -62,29 +62,29 @@ export default {
 	},
     methods: {
         getDetailData(el) {
-            window.scroll(0, 0)
-            let id = el.$route.params.id
-            let router = this.$route.path.split('/')[1]
+            window.scroll(0, 0);
+            let id = el.$route.params.id;
+            let router = this.$route.path.split('/')[1];
             let params = {
                 id,
                 router
-            }
-            el.$store.dispatch('getDetail', params)
-            if(router == 'travel') {
+            };
+            el.$store.dispatch('getDetail', params);
+            if(router === 'travel') {
                 el.$store.dispatch('travelClicks', id)
             }
 
         },
         confirm() {
-            this.dialog = false
+            this.dialog = false;
             _.toast('报名成功', 'success')
         },
         cancel() {
-            this.dialog = false
+            this.dialog = false;
         },
         join() {
             // _.toast('报名成功', 'success')
-            this.dialog = true
+            this.dialog = true;
         }
     }
 }

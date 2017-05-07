@@ -16,7 +16,7 @@ export default {
 		travelList
 	},
     created() {
-        if (this.travelsList.length == 0) {
+        if (this.travelsList.length === 0) {
             this.$store.dispatch('getTravelsList')
         }
     },
@@ -27,7 +27,7 @@ export default {
 	},
 	data() {
 		return {
-			
+
 		}
 	},
 }
