@@ -3,31 +3,31 @@ import * as types from '../types'
 
 const state = {
     travelsList: [
-      {
-        "objectId": 1,
-        "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
-        "joinNum": 20,
-        "title": "111",
-        "clicks": "21111",
-        "releaseUsername": "sdasda",
-        "releaseTime": "2012-2-02"
-      },
-      {
-        "objectId": 2,
-        "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
-        "joinNum": 22,
-        "title": "22",
-        "clicks": "2222",
-        "releaseUsername": "sdasda",
-        "releaseTime": "2012-2-02"
-      }
+      // {
+      //   "objectId": 1,
+      //   "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
+      //   "joinNum": 20,
+      //   "title": "111",
+      //   "clicks": "21111",
+      //   "releaseUsername": "sdasda",
+      //   "releaseTime": "2012-2-02"
+      // },
+      // {
+      //   "objectId": 2,
+      //   "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
+      //   "joinNum": 22,
+      //   "title": "22",
+      //   "clicks": "2222",
+      //   "releaseUsername": "sdasda",
+      //   "releaseTime": "2012-2-02"
+      // }
     ],
     searchKey: {
         page: 0,
         limit: 20
     },
     scroll: true
-}
+};
 
 const actions = {
     /**
@@ -47,12 +47,12 @@ const actions = {
                 })
         }
     }
-}
+};
 
 const getters = {
     travelsList: state => state.travelsList,
     travelListIndex: state => state.travelsList.slice(0,4)
-}
+};
 
 const mutations = {
     [types.GET_TRAVELS_LIST](state, res) {
@@ -71,7 +71,7 @@ const mutations = {
     [types.GET_TRAVELS_SCORLL_STATUS](state, status) {
         state.scroll = status
     }
-}
+};
 
 export default {
     state,
