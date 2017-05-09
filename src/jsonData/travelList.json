@@ -2,7 +2,7 @@
   "data": [
     {
       "joinMax": "10",
-      "clicks": 2421,
+      "clicks": 2393,
       "content": "",
       "travelPic": "http://ac-afkydcqq.clouddn.com/f7a0443a710ceded28ef.jpg",
       "endTime": {
@@ -28,11 +28,11 @@
       "destination": "江西 九江 庐山区 江西省九江市",
       "objectId": "58b50cae570c350058aaeb25",
       "createdAt": "2017-02-28T05:37:50.528Z",
-      "updatedAt": "2017-05-09T10:24:32.137Z"
+      "updatedAt": "2017-05-08T13:05:22.004Z"
     },
     {
       "joinMax": "5",
-      "clicks": 935,
+      "clicks": 927,
       "content": "dfrgrvf",
       "travelPic": "http://ac-afkydcqq.clouddn.com/f7a0443a710ceded28ef.jpg",
       "endTime": {
@@ -55,11 +55,11 @@
       "destination": "江西 南昌 东湖区 efrgvv",
       "objectId": "58b4ea408fd9c50064bf9fa2",
       "createdAt": "2017-02-28T03:10:56.516Z",
-      "updatedAt": "2017-05-09T10:24:36.981Z"
+      "updatedAt": "2017-04-30T11:45:28.946Z"
     },
     {
       "joinMax": "2",
-      "clicks": 1054,
+      "clicks": 1040,
       "content": "",
       "travelPic": "http://ac-afkydcqq.clouddn.com/f7a0443a710ceded28ef.jpg",
       "endTime": {
@@ -85,11 +85,11 @@
       "destination": "北京 北京市 东城区 ",
       "objectId": "57a49299d342d30057540b61",
       "createdAt": "2016-08-05T13:20:25.872Z",
-      "updatedAt": "2017-05-09T10:24:44.370Z"
+      "updatedAt": "2017-04-30T14:34:16.823Z"
     },
     {
       "joinMax": "1",
-      "clicks": 918,
+      "clicks": 910,
       "content": "",
       "travelPic": "http://ac-aFkydcqQ.clouddn.com/86a39bdd8c0052e14932.jpg",
       "endTime": {
@@ -115,7 +115,7 @@
       "destination": "北京 北京市 东城区 ",
       "objectId": "57a492221532bc0060bc9087",
       "createdAt": "2016-08-05T13:18:26.717Z",
-      "updatedAt": "2017-05-09T09:00:24.117Z"
+      "updatedAt": "2017-04-30T14:34:33.030Z"
     },
     {
       "joinMax": "1",

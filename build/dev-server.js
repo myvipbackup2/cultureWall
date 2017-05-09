@@ -24,14 +24,20 @@ var app = express()
 
 
 //模拟后端控制器获取数据（不成功）
-var appData = require('../src/travelList.json')  /* 引入根目录下travelList.json数据文件 */
-var travelList = appData.travelList   /* travelList.json文件文件下的.travelList数据赋值给变量travelList */
+var travelList = require('../src/jsonData/travelList.json')  /* 引入根目录下travelList.json数据文件 */
+var travelDetail = require('../src/jsonData/travelDetail.json')
+// var travelClickNum = require('../src/jsonData/travelClickNum.json')
+
 var apiRoutes = express.Router()  /* 定义express.Router() 对象 */
 apiRoutes.post('/travelList', function(req, res){   /* 定义接口并返回数据 */
-  res.json({
-    data: travelList
-  })
+  res.send(travelList)
 })
+apiRoutes.post('/travelDetail', function(req, res){   /* 定义接口并返回数据 */
+  res.send(travelDetail)
+})
+// apiRoutes.post('/travelClickNum', function(req, res){   /* 定义接口并返回数据 */
+//   res.send(travelClickNum)
+// })
 app.use('/api', apiRoutes)
 
 

@@ -40,7 +40,7 @@ const actions = {
             commit(types.GET_TRAVELS_SCORLL_STATUS, false)
             api.TravelsList()
                 .then(res => {
-                    console.log(res)
+                    console.log(res);
                     commit(types.COM_LOADING_STATUS, false),
                     commit(types.GET_TRAVELS_SCORLL_STATUS, true),
                     commit(types.GET_TRAVELS_LIST, res)
