@@ -24,21 +24,34 @@ var app = express()
 
 
 //模拟后端控制器获取数据（不成功）
-var travelList = require('../src/jsonData/travelList.json')  /* 引入根目录下travelList.json数据文件 */
-var travelDetail = require('../src/jsonData/travelDetail.json')
-// var travelClickNum = require('../src/jsonData/travelClickNum.json')
+var travelList = require('../src/jsonData/travelList.json'); /* 引入根目录下travelList.json数据文件 */
+var travelDetail = require('../src/jsonData/travelDetail.json');
+var travelClickNum = require('../src/jsonData/travelClickNum.json');
+var sportList = require('../src/jsonData/sportList.json');
+var sportDetail = require('../src/jsonData/sportDetail.json');
+var userInfo = require('../src/jsonData/userInfo.json');
 
-var apiRoutes = express.Router()  /* 定义express.Router() 对象 */
-apiRoutes.post('/travelList', function(req, res){   /* 定义接口并返回数据 */
+var apiRoutes = express.Router();/* 定义express.Router() 对象 */
+
+apiRoutes.post('/travelList', function (req, res) {   /* 定义接口并返回数据 */
   res.send(travelList)
-})
-apiRoutes.post('/travelDetail', function(req, res){   /* 定义接口并返回数据 */
+});
+apiRoutes.post('/travelDetail', function (req, res) {
   res.send(travelDetail)
-})
-// apiRoutes.post('/travelClickNum', function(req, res){   /* 定义接口并返回数据 */
-//   res.send(travelClickNum)
-// })
-app.use('/api', apiRoutes)
+});
+apiRoutes.post('/travelClickNum', function (req, res) {
+  res.send(travelClickNum)
+});
+apiRoutes.post('/sportList', function (req, res) {
+  res.send(sportList)
+});
+apiRoutes.post('/sportDetail', function (req, res) {
+  res.send(sportDetail)
+});
+apiRoutes.post('/userInfo', function (req, res) {
+  res.send(userInfo)
+});
+app.use('/api', apiRoutes);
 
 
 var compiler = webpack(webpackConfig)
@@ -49,12 +62,13 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
 })
 
 var hotMiddleware = require('webpack-hot-middleware')(compiler, {
-  log: () => {}
+  log: () => {
+  }
 })
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
   compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
-    hotMiddleware.publish({ action: 'reload' })
+    hotMiddleware.publish({action: 'reload'})
     cb()
   })
 })
@@ -63,7 +77,7 @@ compiler.plugin('compilation', function (compilation) {
 Object.keys(proxyTable).forEach(function (context) {
   var options = proxyTable[context]
   if (typeof options === 'string') {
-    options = { target: options }
+    options = {target: options}
   }
   app.use(proxyMiddleware(options.filter || context, options))
 })
