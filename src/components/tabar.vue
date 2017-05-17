@@ -57,7 +57,7 @@ export default {
 	    width: 100%;
 	    height: px2rem(120px);
 	    line-height: px2rem(120px);
-	    background: #fff;
+	    background: #FBC603;
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	    &:after{
 			display: block;
@@ -90,6 +90,7 @@ export default {
 				.tab-text{
 					height: px2rem(80px);
 					line-height: px2rem(80px);
+          color:#605D5D;
 				}
 			}
 

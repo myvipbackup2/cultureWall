@@ -3,7 +3,7 @@
         <div class="travel-list-head">
             <div class="head-l">
                 <i class="icon">&#xe678;</i>
-                <span>热门表白</span>
+                <span>我的表白</span>
             </div>
             <div class="head-r">
                 <router-link to="/travel">
@@ -37,12 +37,12 @@ export default {
 @import '../assets/css/function';
 
 .travel-list {
-    margin-top: px2rem(15px);
     background: #fff;
 }
 .travel-list-head {
-    height: px2rem(80px);
-    line-height: px2rem(80px);
+    background: #FBC603;
+    height: px2rem(30px);
+    line-height: px2rem(30px);
     display: flex;
     justify-content: space-between;
     padding: 0 px2rem(20px);
@@ -50,7 +50,7 @@ export default {
     .head-l {
         .icon {
             color: #F14343;
-            font-size: px2rem(40px);
+            font-size: px2rem(20px);
             vertical-align: middle;
             padding-right: 3px;
         }

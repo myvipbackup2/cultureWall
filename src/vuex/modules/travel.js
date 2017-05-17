@@ -8,7 +8,7 @@ const state = {
       //   "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
       //   "joinNum": 20,
       //   "title": "111",
-      //   "clicks": "21111",
+      //   "clicks": "211113333",
       //   "releaseUsername": "sdasda",
       //   "releaseTime": "2012-2-02"
       // },
@@ -17,7 +17,7 @@ const state = {
       //   "travelPic": "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png",
       //   "joinNum": 22,
       //   "title": "22",
-      //   "clicks": "2222",
+      //   "clicks": "22223333",
       //   "releaseUsername": "sdasda",
       //   "releaseTime": "2012-2-02"
       // }

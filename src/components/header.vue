@@ -17,7 +17,7 @@
     },
     data() {
       return {
-        
+
       }
     },
     methods: {
@@ -44,7 +44,7 @@
   z-index: 4;
   height: px2rem(100px);
   width: 100%;
-  background: #76D49B;
+  background: #FBC603;
   display: flex;
   flex-direction: row;
   .header-icon{
@@ -57,7 +57,7 @@
       font-size: 22px;
     }
   }
-  
+
   .header-cont {
     flex: 6;
     padding-left: px2rem(40px);
