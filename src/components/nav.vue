@@ -3,13 +3,13 @@
         <ul>
 			<li>
 				<router-link to="/user/navbar">
-          <img src="../assets/images/btn1.gif">
+          <img src="../assets/images/btn2.png">
 					<p>我的信件</p>
 				</router-link>
 			</li>
 			<li>
 				<router-link to="/user/post">
-          <img src="../assets/images/btn1.gif">
+          <img src="../assets/images/btn1.png">
           <p>新建信件</p>
 				</router-link>
 			</li>

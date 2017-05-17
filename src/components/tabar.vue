@@ -3,25 +3,31 @@
 		<div class="tab">
 			<div class="tab-item">
 				<router-link to="/home">
-					<div class="tab-icon"><img src="../assets/images/tab_home.png" alt=""></div>
+					<div class="tab-icon"><img src="../assets/images/btn4.png" alt=""></div>
 					<div class="tab-text">首页</div>
 				</router-link>
 			</div>
+      <div class="shu">
+      </div>
 			<div class="tab-item">
 				<router-link to="/sport">
-					<div class="tab-icon"><img src="../assets/images/tab_running.png" alt=""></div>
+					<div class="tab-icon"><img src="../assets/images/btn7.png" alt=""></div>
 					<div class="tab-text">书架</div>
 				</router-link>
 			</div>
+      <div class="shu">
+      </div>
 			<div class="tab-item">
 				<router-link to="/travel">
-					<div class="tab-icon"><img src="../assets/images/tab_travel.png" alt=""></div>
+					<div class="tab-icon"><img src="../assets/images/btn6.png" alt=""></div>
 					<div class="tab-text">约行</div>
 				</router-link>
 			</div>
+      <div class="shu">
+      </div>
 			<div class="tab-item">
 				<router-link to="/user">
-					<div class="tab-icon"><img src="../assets/images/tab_user.png" alt=""></div>
+					<div class="tab-icon"><img src="../assets/images/btn5.png" alt=""></div>
 					<div class="tab-text">我的</div>
 				</router-link>
 			</div>
@@ -47,7 +53,12 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/css/function';
-
+.shu{
+  margin-top: px2rem(17px);
+  background-color: #7C7C7B;
+  height: px2rem(80px);
+  width: 2px;
+}
 .tabar{
 	.tab{
 		position: fixed;
@@ -85,6 +96,7 @@ export default {
 					margin: 0 auto;
 					img{
 						width: 100%;
+            height: px2rem(50px);
 					}
 				}
 				.tab-text{
