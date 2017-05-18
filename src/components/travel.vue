@@ -2,10 +2,15 @@
 	<div class="travel">
         <router-link :to="{ path: '/travel/'+ travel.objectId }">
               <div class="border">
-                <divclass>
+                <div class="border_one">
                   <img src="../assets/images/btn3.png">
-                  <p class="name">刘小光</p>
-                </div class="aaaa">
+                  <p class="name">{{travel.releaseUsername}}</p>
+                </div>
+                <div></div>
+                <div class="border_two">
+                <p class="title">C919将于五月五日在浦东机场起飞</p>
+                <p class="bo">网易云音乐是一款专注于发现与分享的音乐产品,依托专业音乐人、DJ、好友推荐及社</p>
+                </div>
               </div>
         </router-link>
 	</div>
@@ -31,18 +36,40 @@ export default {
   margin-top: 5px;
   margin-left: 3%;
   width: 93.75%;
-  height: px2rem(140px);
+  height: px2rem(160px);
   border: 1px solid #FBC603;
   background-color: #F5F5F5;
-  img{
-    margin-top: 3px;
-    margin-left: 3%;
-    width: 12.5%;
-    height:  px2rem(100px);
+  .border_one{
+    float: left;
+    width: 20%;
+    height: px2rem(160px) ;
+    img{
+      margin-left: 12%;
+      margin-top: 3px;
+      width: 80%;
+      height: px2rem(110px);
+    }
+    .name{
+      font-size:px2rem(30px) ;
+      margin-top: 2px;
+      color: #000000;
+      text-align: center;
+    }
   }
-  .name{
-    color: #000000;
-    margin-left: 4%;
+  .border_two{
+    text-align: center;
+    float: left;
+    width: 80%;
+    height: px2rem(160px);
+    .title{
+      font-size: px2rem(30px);
+      color: #000000;
+      margin-top: 2%;
+    }
+    .bo{
+      text-align: left;
+      margin-top: 3%;
+    }
   }
 }
 </style>
