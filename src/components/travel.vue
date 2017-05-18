@@ -5,7 +5,7 @@
                 <divclass>
                   <img src="../assets/images/btn3.png">
                   <p class="name">刘小光</p>
-                </div class="aaa">
+                </div class="aaaa">
               </div>
         </router-link>
 	</div>
