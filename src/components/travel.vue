@@ -6,10 +6,13 @@
                   <img src="../assets/images/btn3.png">
                   <p class="name">{{travel.releaseUsername}}</p>
                 </div>
-                <div></div>
+                <div id="uu">
+                  <div id="uu1"></div>
+                </div>
                 <div class="border_two">
-                <p class="title">C919将于五月五日在浦东机场起飞</p>
-                <p class="bo">网易云音乐是一款专注于发现与分享的音乐产品,依托专业音乐人、DJ、好友推荐及社</p>
+                    <p class="title">C919将于五月五日在浦东机场起飞</p>
+                    <p class="bo">网易云音乐是一款专注于发现与分享的音乐产品,依托专业音乐人、DJ、好友推荐及社</p>
+                  <input type="button" value="阅读详情" class="readBtn">
                 </div>
               </div>
         </router-link>
@@ -56,10 +59,21 @@ export default {
       text-align: center;
     }
   }
+#uu{
+  float: left;
+  width:5%;
+  height: px2rem(160px) ;
+  #uu1{
+    background-color: #FBC603;
+    height: px2rem(130px);
+    width: 1px;
+    margin-top: px2rem(15px);
+  }
+}
   .border_two{
     text-align: center;
     float: left;
-    width: 80%;
+    width: 75%;
     height: px2rem(160px);
     .title{
       font-size: px2rem(30px);
@@ -69,6 +83,9 @@ export default {
     .bo{
       text-align: left;
       margin-top: 3%;
+    }
+    .readBtn{
+
     }
   }
 }
