@@ -11,8 +11,9 @@
                 </div>
                 <div class="border_two">
                     <p class="title">C919将于五月五日在浦东机场起飞</p>
-                    <p class="bo">网易云音乐是一款专注于发现与分享的音乐产品,依托专业音乐人、DJ、好友推荐及社</p>
-                  <input type="button" value="阅读详情" class="readBtn">
+                    <p class="bo">网易云音乐是一款专注于发现与分享的音乐产品,依托专业音乐人、DJ</p>
+                    <input type="button" value="阅读详情" class="readBtn">
+                    <span class="time">2017年7月15日</span>
                 </div>
               </div>
         </router-link>
@@ -73,7 +74,7 @@ export default {
   .border_two{
     text-align: center;
     float: left;
-    width: 75%;
+    width: 70%;
     height: px2rem(160px);
     .title{
       font-size: px2rem(30px);
@@ -85,7 +86,17 @@ export default {
       margin-top: 3%;
     }
     .readBtn{
-
+      background-color: #FFCF17;
+      border-radius: 10px;
+      width: 27%;
+      height: px2rem(35px);
+      color: #F90606;
+      margin-top: px2rem(10px);
+    }
+    .time{
+      float: right;
+      margin-right:px2rem(35px) ;
+      margin-top:  px2rem(20px);
     }
   }
 }
