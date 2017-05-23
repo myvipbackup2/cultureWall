@@ -28,7 +28,7 @@ export default {
     },
     data() {
         return {
-            
+
         }
     },
     methods: {
@@ -92,7 +92,7 @@ export default {
             }
         }
     }
-    
+
 
 }
 </style>

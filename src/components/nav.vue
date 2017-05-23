@@ -44,7 +44,7 @@ export default {
 	}
   img{
     width: 54.266px;
-    height: 54.266px;
+    height: 56.266px;
     margin-top: 10px;
   }
 	ul {
