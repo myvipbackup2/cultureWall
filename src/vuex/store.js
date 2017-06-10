@@ -7,7 +7,7 @@ import travel from './modules/travel'
 import detail from './modules/detail'
 import com from './modules/com'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
     modules: {
